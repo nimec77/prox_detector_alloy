@@ -3,7 +3,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
-enum ProxyType {
+pub enum ProxyType {
     None,
     Minimal,
     Transparent,

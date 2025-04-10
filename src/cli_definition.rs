@@ -6,13 +6,13 @@ use clap::{command, Parser, Subcommand};
 
 #[derive(Parser)]
 #[command(author, version, about)]
-struct Cli {
+pub struct Cli {
     #[command(subcommand)]
-    cmd: Command,
+    pub cmd: Command,
 }
 
 #[derive(Subcommand)]
-enum Command {
+pub enum Command {
     /// Classify proxy type
     Detect { proxy: String },
     /// Current implementation address
